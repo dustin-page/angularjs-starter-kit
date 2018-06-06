@@ -110,8 +110,8 @@ module.exports = function makeWebpackConfig() {
         fallbackLoader: 'style-loader',
         loader: [
           {loader: 'css-loader', query: {sourceMap: true}},
+          {loader: 'postcss-loader', query: {sourceMap: true}},
           {loader: 'sass-loader', query: {sourceMap: true}},
-          {loader: 'postcss-loader'}
         ],
       })
     }, {
